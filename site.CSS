@@ -1,0 +1,159 @@
+:root {
+    --primary: #9370DB;
+    --secondary: #E6E6FA;
+    --accent: #483D8B;
+    --text: #41068d;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #9b59b6, #d8a7f3);
+    color: var(--text);
+    
+}
+
+.area-roxa {
+    background-color: #9370DB;
+    text-align: center; 
+    padding: 20px;
+  }
+  
+  .area-roxa p {
+    margin-top: 20px;
+    color: #fff;
+  }
+
+.navbar
+{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+.header {
+    background-color: var(--primary);
+    padding: 100px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 200px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.minhaImagem {
+    width: 200px;
+    height: 190px;
+    border: 6px solid rgb(133, 23, 236);
+    border-radius: 15px;
+}
+
+
+
+.recipe-icon {
+    width: 100%;
+    height: 200px;
+}
+
+.recipe-title {
+    color: var(--accent);
+    font-size: 1.5em;
+    margin: 1rem 0;
+}
+
+.recipe-description {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: 5% auto;
+    padding: 2rem;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--accent);
+}
+
+.recipe-details {
+    margin-top: 2rem;
+}
+
+.ingredients-list, .instructions-list {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+footer {
+    background: linear-gradient(to left, #9400D3, #5A3799);
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    margin: 0 10px;
+  }
+  
+  .social-icon i {
+    font-size: 24px;
+    color: #FFFFFF;
+  }
